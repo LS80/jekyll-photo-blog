@@ -1,0 +1,11 @@
+---
+layout: post
+---
+
+<h2>{{ content }}</h2>
+
+<p>Click the image for the original full-size version.</p>
+
+{% for image in page.images %}
+{% include photo.html id=image.id effect=image.effect caption=image.caption %}
+{% endfor %}
